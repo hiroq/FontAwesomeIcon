@@ -79,9 +79,6 @@ public class FaIcon extends TextView {
             if (mFont != null) {
                 setTypeface(mFont);
             }
-        } else {
-            // In EditMode, a start is shown as an alternative icon.
-            setText(ALTERNATIVE_EDIT_MODE);
         }
     }
 
@@ -91,8 +88,7 @@ public class FaIcon extends TextView {
      * @param name
      */
     public void setIcon(final String name) {
-        final String icon = FontAwesome.getCode(name);
-        setText(icon != null ? icon : ALTERNATIVE_EDIT_MODE);
+        setText(isInEditMode() ? ALTERNATIVE_EDIT_MODE : FontAwesome.getCode(name));
     }
 
     /**
