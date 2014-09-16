@@ -48,16 +48,20 @@ FontAwesome 4.2.0 [Icons](http://fontawesome.io/icons/)
 # How to setup
 ## Android Studio
 1. Move to project path  
-`cd path_to_project`
+```bash
+cd path_to_project
+```
 
 2. Checkout FontAwesomeIcon and add git submodule  
-`git submodule add https://github.com/hiroq/FontAwesomeIcon.git`  
+```bash
+git submodule add https://github.com/hiroq/FontAwesomeIcon.git
+```
 If your project does not have own git repository, use this command `git clone https://github.com/hiroq/FontAwesomeIcon.git` instead.
 
 3. Configure to include FontAwesome  
 Append `include ':FontAwesomeIcon:lib'` to "./settings.gradle".  
 Sample is below:  
-```gradle
+```./settings.gradle
 include ':app'
 include ':FontAwesomeIcon:lib'
 ```
@@ -65,7 +69,7 @@ include ':FontAwesomeIcon:lib'
 4. Configure to compile FontAwesome  
 Append `compile project(':FontAwesomeIcon:lib')` to "./app/build.gradle".  
 Sample is below:  
-```
+```./app/build.gradle
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile project(':FontAwesomeIcon:lib')
@@ -73,7 +77,7 @@ dependencies {
 ```
 
 5. Copy TRUE TYPE FONT to your assets dir  
-```
+```bash
 cd path_to_project
 cp ./FontAwesomeIcon/fontawesome-webfont.ttf ./app/src/main/assets/
 ```
@@ -86,7 +90,7 @@ cp ./FontAwesomeIcon/fontawesome-webfont.ttf ./app/src/main/assets/
 # How to fetch latest FontAwesome
 To execute following commands, you can fetch the latest FontAwesome to your local library.
 
-```sh
+```bash
 cd FontAwesomeIcon/generator
 chmod +x ./generator.sh
 ./generator.sh
