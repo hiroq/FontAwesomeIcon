@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <declare-styleable name="FaIcon">
+        <attr name="faIcon" format="string"/>
+        <attr name="faSize" format="dimension"/>
+        <attr name="faColor" format="color"/>
+      </declare-styleable>
+</resources>
+
