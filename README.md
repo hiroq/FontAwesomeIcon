@@ -33,7 +33,7 @@ icon.setSize(context.getResources().getDimension(R.dimen.sample));
 |xmlns|
 |-----|
 |xmlns:faicon="http://schemas.android.com/apk/res-auto"|
-
+  
 | Attribute Name  | Related Method        | Description |
 |-----------------|-----------------------|
 | faicon:faSize   | setSize(float size)   | Specify font size. Format is completely same as TextSize like `@dimen/width`, `10dp`, `13sp`|
