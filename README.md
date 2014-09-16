@@ -37,7 +37,7 @@ icon.setSize(context.getResources().getDimension(R.dimen.sample));
 | Attribute Name  | Related Method        | Description |
 |-----------------|-----------------------|-------------|
 | faicon:faSize   | setSize(float size)   | Specify font size. Format is completely same as TextSize like `@dimen/width`, `10dp`, `13sp`|
-| faicon:faIcon   | setIcon(String name)  | Specify an icon name lile `fa-****`. Please refer to [support names](http://fontawesome.io/icons/)|
+| faicon:faIcon   | setIcon(String name)  | Specify an icon name. Please refer to [support names](http://fontawesome.io/icons/)|
 | faicon:faColor  | setColor(int color)   | Specify a icon color. Format is completely same as TextColor like `@color/red`, `#FF303030`(ARGB), `#303030`(RGB)|
 
 
